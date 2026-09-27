@@ -5,9 +5,14 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "scheme": "myapp",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Is app ko speech recognition access chahiye.",
+        "NSMicrophoneUsageDescription": "Is app ko microphone chahiye speech sunne ke liye."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -15,10 +20,25 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Is app ko microphone chahiye speech sunne ke liye.",
+          "speechRecognitionPermission": "Is app ko speech recognition access chahiye."
+        }
+      ],
+      "expo-router",
+      "expo-status-bar"
+    ]
   }
 }
