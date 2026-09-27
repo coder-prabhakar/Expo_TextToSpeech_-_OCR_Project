@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "dependencies": {
+    "@react-native-ml-kit/text-recognition": "^2.0.0",
     "expo": "~57.0.24",
     "expo-constants": "~57.0.19",
+    "expo-image-picker": "~57.0.20",
     "expo-linking": "~57.0.10",
     "expo-router": "~57.0.22",
     "expo-speech-recognition": "^57.1.0",

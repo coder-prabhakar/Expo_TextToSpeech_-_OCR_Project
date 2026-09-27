@@ -37,6 +37,13 @@
           "speechRecognitionPermission": "Is app ko speech recognition access chahiye."
         }
       ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Is app ko photos access chahiye image se text nikalne ke liye.",
+          "cameraPermission": "Is app ko camera access chahiye photo khichne ke liye."
+        }
+      ],
       "expo-router",
       "expo-status-bar"
     ]

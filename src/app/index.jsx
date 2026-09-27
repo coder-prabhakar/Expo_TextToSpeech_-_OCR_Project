@@ -15,6 +15,13 @@ const Home = () => {
             >
                 <Text style={styles.cardText}>🎙️ Speech to Text</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+                style={styles.card}
+                onPress={() => router.push('/OCR')}
+            >
+                <Text style={styles.cardText}>🖼️ Image to Text (OCR)</Text>
+            </TouchableOpacity>
         </View>
     )
 }
